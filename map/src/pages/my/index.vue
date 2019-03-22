@@ -7,7 +7,7 @@
       <p>176****6605</p>
     </header>
     <ul>
-      <li>
+      <li @click="goSignList">
         <icon type="waiting" size="18px" />
         <span>
           我的面试
@@ -45,10 +45,16 @@ export default {
     getPhoneNumber(e){
       console.log('e...', e);
       this.showPhoneDialog = false;
-    }
+    },
+    goSignList(){
+    wx.navigateTo({
+      url:'/pages/sign/list/main'
+    })
+  }
   },
 
   onShow() {
+    console.log(this.info.phone)
     if (!this.info.phone){
       this.showPhoneDialog = true;
     }

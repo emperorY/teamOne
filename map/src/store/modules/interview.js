@@ -1,4 +1,4 @@
-import {addSign} from '@/api/index'
+// import {addSign} from '@/api/index'
 const state = {
   list: [],
   current: {
@@ -18,10 +18,10 @@ const actions = {
   async submit (state, payload) {
     return new Promise(async (resolve, reject) => {
       payload.latitude = payload.address.location.lat
-      payload.longitude = payload.address.location.lng
       payload.address = JSON.stringify(payload.address)
-      let result = await addSign(payload)
-      resolve(result)
+      console.log(payload)
+      // let result = await addSign(payload)
+      // resolve(result)
     })
   }
 }
