@@ -11,7 +11,7 @@ export let addSign = params => {
   return request.post('/sign', params);
 }
 
-// //获取列表
+//获取列表
 export let getSignList = params =>{
   return request.get('/sign',params);
 }

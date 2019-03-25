@@ -5,7 +5,7 @@ export let fly = new Fly
 //设置超时
 fly.config.timeout = 10000;
 //设置请求地址
-fly.config.baseURL = 'http://123.206.55.50:7001/'
+fly.config.baseURL = 'http://169.254.12.68:7001/'
 
 let cookies = {}
 

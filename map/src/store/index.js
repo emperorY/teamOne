@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Vuex from 'vuex'
 import createLogger from 'vuex/dist/logger'
 
+import sign from "./modules/sign"
 // 挂载modules
 import index from './modules/index'
 import interview from './modules/interview'

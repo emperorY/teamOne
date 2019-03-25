@@ -88,7 +88,7 @@ export default {
     },
     // 去添加面试页面
     goAdd(){
-      wx.navigateTo({ url: '/pages/add/main' });
+      wx.navigateTo({ url: '/pages/sign/add/main' });
     }
   },
 
